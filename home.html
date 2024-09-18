@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .outfit-font {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+</head>
+<body class="outfit-font">
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <div class="stats shadow">
+                        <div class="stat">
+                            <div class="stat-value">89,400</div>
+                            <div class="stat-desc">Available Balance</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <button id="add-money" class="btn btn-lg">Add Money</button>
+                        <button id="cashout" class="btn btn-lg">Cashout</button>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Add Amount</span>
+                                </label>
+                                <input id="amount" type="text" placeholder="Enter amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">4 Digit Pin</span>
+                                </label>
+                                <input id="home-pin" type="password" placeholder="Enter 4 digit" class="input input-bordered" />
+                            </div>
+                            <div class="form-control mt-6" id="login">
+                                <button class="btn btn-primary">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/home.js"></script>
+</body>
+</html>
