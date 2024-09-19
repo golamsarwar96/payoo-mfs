@@ -10,7 +10,7 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
         const mainBalance = document.getElementById('main-balance').innerText;
         const mainBalanceNumber = parseFloat(mainBalance);
 
-        const newBalance = addMoneyNumber + mainBalanceNumber;
+        const newBalance = mainBalanceNumber - addMoneyNumber;
 
         document.getElementById('main-balance').innerText = newBalance;
 

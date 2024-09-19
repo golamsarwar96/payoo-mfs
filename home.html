@@ -23,37 +23,36 @@
                 <div class="artboard artboard-demo phone-3">
                     <div class="stats shadow">
                         <div class="stat">
-                            <div class="stat-value">89,400</div>
+                            <div id="main-balance" class="stat-value">9400</div>
                             <div class="stat-desc">Available Balance</div>
                         </div>
                     </div>
                     <div class="divider"></div>
-                    <div>
-                        <button id="add-money" class="btn btn-lg">Add Money</button>
-                        <button id="cashout" class="btn btn-lg">Cashout</button>
-                    </div>
-                    <div class="divider"></div>
+
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Add Amount</span>
+                                    <span class="label-text">Add Money</span>
                                 </label>
-                                <input id="amount" type="text" placeholder="Enter amount" class="input input-bordered" required />
+                                <input type="text" id="add-money" placeholder="Add amount" class="input input-bordered" autocomplete="off" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">4 Digit Pin</span>
                                 </label>
-                                <input id="home-pin" type="password" placeholder="Enter 4 digit" class="input input-bordered" />
+                                <input type="password" id="pin-number" placeholder="Enter 4 Digit Pin" class="input input-bordered" autocomplete="off " required />
+
                             </div>
-                            <div class="form-control mt-6" id="login">
-                                <button class="btn btn-primary">Add Money</button>
+                            <div class="form-control mt-6">
+                                <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <div class="divider"></div>
+            
         </div>
     </main>
     <script src="./js/home.js"></script>
